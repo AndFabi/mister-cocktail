@@ -8,7 +8,7 @@
     <%= cocktail.name %>
 
   </h4>
-  <%= link_to "Add doses and ingredients", "" %>
+  <%= link_to "Add doses and ingredients", new_cocktail_dose_path(cocktail.id) %>
 
 <% end %>
 
