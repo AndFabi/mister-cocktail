@@ -1,2 +1,12 @@
-<h1>Doses#new</h1>
-<p>Find me in app/views/doses/new.html.erb</p>
+<h1>Create your own Doses</h1>
+
+
+<%= form_for(@dose, url: cocktails_path) do |f| %>
+
+  <h4>Add a description</h4>
+  <p><%= f.text_field :description %></p>
+
+
+  <%= f.button :submit %>
+<% end %>
+
