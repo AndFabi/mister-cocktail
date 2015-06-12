@@ -9,7 +9,7 @@
   </p>
   <p>
     <%= f.label :ingredient_id %>
-    <%= f.text_field :ingredient_id %>
+    <%= f.select :ingredient_id, @ingredients.collect{|i| [i.name, i.id]} %>
   </p>
 
 

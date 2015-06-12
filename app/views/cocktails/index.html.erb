@@ -3,7 +3,12 @@
 
 <% @cocktails.each do |cocktail| %>
 
-  <h4><%= cocktail.name %></h4>
+  <h4>
+
+    <%= cocktail.name %>
+
+  </h4>
+  <%= link_to "Add doses and ingredients", "" %>
 
 <% end %>
 
